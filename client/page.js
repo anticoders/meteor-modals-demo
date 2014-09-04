@@ -29,11 +29,12 @@ Template.page.events({
   },
 
   'click .__custom': function(e, t) {
-    AntiModals.overlay('modal');
+    AntiModals.overlay('simpleModal');
   },
 
   'click .__yellow': function(e, t) {
     AntiModals.overlay('modal', {
+      modal: true,
       overlayClass: 'yellow',
     });
   },
